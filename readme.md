@@ -99,5 +99,5 @@ setConfig.setErrorStyle('text-red-500 bg-white')
 ## Road map
 * [x]  Events
 * [ ]  Configure type
-* [ ]  Configure styles
+* [x]  Configure styles
 * [ ]  Configure boolean type
