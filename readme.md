@@ -69,8 +69,20 @@ columnDefs: [
 ]
 ```
 
+Or with events
+```js
+columnDefs: [
+  generateDef('myField')
+    .pipe(
+      onEvent('onCellClicked', (data) => {
+        // do something with data
+      })
+    )
+]
+```
+
 ## Road map
-* [ ]  Events
+* [x]  Events
 * [ ]  Configure type
 * [ ]  Configure styles
 * [ ]  Configure boolean type

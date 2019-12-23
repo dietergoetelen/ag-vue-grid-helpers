@@ -10,6 +10,8 @@ import setStyle from './src/set-style'
 import setType from './src/set-type'
 import setWidth from './src/set-width'
 
+import onEvent from './src/on-event'
+
 const publicApi = {
   frameworkComponents,
   columnPipe,
@@ -19,7 +21,8 @@ const publicApi = {
   setField,
   setStyle,
   setType,
-  setWidth
+  setWidth,
+  onEvent
 }
 
 export default publicApi
