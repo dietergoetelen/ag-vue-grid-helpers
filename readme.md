@@ -81,6 +81,21 @@ columnDefs: [
 ]
 ```
 
+## Override default config
+```js
+import {
+  setConfig
+} from 'ag-vue-grid-helpers'
+
+// set all default column widths to 200
+setConfig.setWidth(200)
+
+// Configure setStyle classes
+setConfig.setSuccessStyle('text-green-500 bg-white')
+setConfig.setDangerStyle('text-orange-500 bg-white')
+setConfig.setErrorStyle('text-red-500 bg-white')
+```
+
 ## Road map
 * [x]  Events
 * [ ]  Configure type

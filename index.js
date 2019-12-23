@@ -11,6 +11,7 @@ import setType from './src/set-type'
 import setWidth from './src/set-width'
 
 import onEvent from './src/on-event'
+import setConfig from './src/config'
 
 const publicApi = {
   frameworkComponents,
@@ -22,7 +23,8 @@ const publicApi = {
   setStyle,
   setType,
   setWidth,
-  onEvent
+  onEvent,
+  setConfig
 }
 
 export default publicApi

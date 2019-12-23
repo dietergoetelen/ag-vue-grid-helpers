@@ -1,12 +1,12 @@
-const styleMap = {
-  success: 'text-white bg-green-500',
-  error: 'text-white bg-red-500',
-  danger: 'text-white bg-orange-500'
+import defaults from './config/defaults'
+
+const styleMap = (style) => {
+  return defaults.get('style')[style]
 }
 
 export default style => column => {
-  if (!styleMap[style]) {
-    throw new Error('type not found')
+  if (!styleMap(style)) {
+    throw new Error('style not found')
   }
 
   return {
