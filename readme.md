@@ -26,9 +26,9 @@ import {
 data () {
   return {
     columnDefs: [
-      generateDef('myStringField'),
-      generateNumberDef('myNumberField', 100), //override width, default = 150
-      generateBooleanDef('myBooleanDef')
+      generateDef('myStringField').get(),
+      generateNumberDef('myNumberField', 100).get(), //override width, default = 150
+      generateBooleanDef('myBooleanDef').get()
     ]
   }
 }
@@ -65,7 +65,7 @@ Each definition returns an object you can chain with `pipe`. For instance to set
 ```js
 columnDefs: [
   generateDef('myField')
-    .pipe(setStyle('primary'))
+    .pipe(setStyle('primary')).get()
 ]
 ```
 
@@ -77,7 +77,7 @@ columnDefs: [
       onEvent('onCellClicked', (data) => {
         // do something with data
       })
-    )
+    ).get()
 ]
 ```
 
