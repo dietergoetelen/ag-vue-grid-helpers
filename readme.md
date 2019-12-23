@@ -66,7 +66,7 @@ export default (header, field, width = 150) => {
 Each definition returns an object you can chain with `pipe`. For instance to set the style of a field one can use:
 ```js
 columnDefs: [
-  generateDef('myField')
+  generateDef('myHeader', 'myField')
     .pipe(setStyle('success')).get()
 ]
 ```
@@ -74,7 +74,7 @@ columnDefs: [
 Or with events
 ```js
 columnDefs: [
-  generateDef('myField')
+  generateDef('myHeader', 'myField')
     .pipe(
       onEvent('onCellClicked', (data) => {
         // do something with data
