@@ -21,11 +21,26 @@
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-stage-0": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
     "jest": "^24.9.0",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
   }
 }

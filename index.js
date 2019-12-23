@@ -28,3 +28,17 @@ const publicApi = {
 }
 
 export default publicApi
+
+export {
+  frameworkComponents,
+  columnPipe,
+  generateBooleanDef,
+  generateDef,
+  generateNumberDef,
+  setField,
+  setStyle,
+  setType,
+  setWidth,
+  onEvent,
+  setConfig
+}

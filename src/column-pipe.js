@@ -22,9 +22,9 @@ const pipe = value => (...fns) => {
 
   return {
     ...reduced,
-    pipe: pipe(reduced)
+    pipe: pipe(reduced),
+    get: () => reduced
   }
 }
-
 
 export default pipe({})

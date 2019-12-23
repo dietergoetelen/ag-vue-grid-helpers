@@ -11,6 +11,6 @@ export default style => column => {
 
   return {
     ...column,
-    cellClass: column.cellClass ? `${column.cellClass} ${styleMap[style]}` : styleMape[style]
+    cellClass: column.cellClass ? `${column.cellClass} ${styleMap(style)}` : styleMap(style)
   }
 }
