@@ -3,6 +3,17 @@ Library to help generate `columnDefs` for [ag-grid](https://www.ag-grid.com/). T
 
 At the moment this library has a hard dependency on `Vue` and `TailwindCSS`.
 
+## Install
+**npm**
+```
+npm install ag-vue-grid-helpers
+```
+
+**yarn**
+```
+yarn add ag-vue-grid-helpers
+```
+
 ## Basic usage
 By default there are three helper functions to generate columns. Each function accepts the name of the field and a width.
 ```js
