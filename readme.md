@@ -65,7 +65,7 @@ Each definition returns an object you can chain with `pipe`. For instance to set
 ```js
 columnDefs: [
   generateDef('myField')
-    .pipe(setStyle('primary')).get()
+    .pipe(setStyle('success')).get()
 ]
 ```
 
