@@ -9,6 +9,7 @@ import setField from './src/set-field'
 import setStyle from './src/set-style'
 import setType from './src/set-type'
 import setWidth from './src/set-width'
+import setHeader from './src/set-header'
 
 import onEvent from './src/on-event'
 import setConfig from './src/config'
@@ -19,6 +20,7 @@ const publicApi = {
   generateBooleanDef,
   generateDef,
   generateNumberDef,
+  setHeader,
   setField,
   setStyle,
   setType,
@@ -40,5 +42,6 @@ export {
   setType,
   setWidth,
   onEvent,
-  setConfig
+  setConfig,
+  setHeader
 }

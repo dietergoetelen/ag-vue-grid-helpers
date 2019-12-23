@@ -3,9 +3,11 @@ import defaults from './config/defaults'
 import columnPipe from './column-pipe'
 import setField from './set-field'
 import setWidth from './set-width'
+import setHeader from './set-header'
 
-export default (field, width = defaults.get('width')) => {
+export default (header, field, width = defaults.get('width')) => {
   return columnPipe(
+    setHeader(header),
     setField(field),
     setWidth(width)
   )

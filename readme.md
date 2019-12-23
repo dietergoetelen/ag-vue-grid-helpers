@@ -26,9 +26,9 @@ import {
 data () {
   return {
     columnDefs: [
-      generateDef('myStringField').get(),
-      generateNumberDef('myNumberField', 100).get(), //override width, default = 150
-      generateBooleanDef('myBooleanDef').get()
+      generateDef('headerString', 'myStringField').get(),
+      generateNumberDef('headerNumber', 'myNumberField', 100).get(), //override width, default = 150
+      generateBooleanDef('headerBoolean', 'myBooleanDef').get()
     ]
   }
 }
@@ -49,9 +49,11 @@ import columnPipe from './column-pipe'
 import setField from './set-field'
 import setWidth from './set-width'
 import setType from './set-type'
+import setHeader from './set-header'
 
-export default (field, width = 150) => {
+export default (header, field, width = 150) => {
   return columnPipe(
+    setHeader(header),
     setField(field),
     setWidth(width),
     setType(Boolean)

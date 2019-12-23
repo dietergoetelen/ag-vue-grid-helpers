@@ -58,11 +58,11 @@ export default {
   },
   beforeMount () {
     this.columnDefs = [
-      generateDef('default').pipe(
+      generateDef('DEFAULT header', 'default').pipe(
         setWidth(200)
       ).get(),
-      generateBooleanDef('boolean', 50).get(),
-      generateNumberDef('number')
+      generateBooleanDef('Header Boolean', 'boolean', 50).get(),
+      generateNumberDef('number header', 'number')
         .pipe(
           setStyle('success'),
           onEvent('onCellDoubleClicked', () => {
@@ -71,10 +71,10 @@ export default {
           })
         )
         .get(),
-      generateNumberDef('number2')
+      generateNumberDef('number2', 'number2')
         .pipe(setStyle('danger'))
         .get(),
-      generateNumberDef('number3')
+      generateNumberDef('number3', 'number2')
         .pipe(setStyle('error'))
         .get()
     ]
